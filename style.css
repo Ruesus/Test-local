@@ -5,3 +5,8 @@ body {
 p{
   color: rgb(43, 226, 58);
 }
+
+button{
+  color: brown;
+  border-radius: 40px;
+}
