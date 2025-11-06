@@ -1,12 +1,69 @@
-body {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: min(100% - 40px, 1340px);
+  margin-inline: auto;
+}
+
+table {
+  height: 600px;
+  width: 800px;
+  margin: 0 auto;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+td {
+  border: 10px solid black;
+}
+
+table td::after {
+  content: "\00a0";
+  display: block;
+  height: 100%;
+}
+
+.red {
+  background-color: red;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.blue {
   background-color: blue;
 }
 
-p{
-  color: rgb(43, 226, 58);
+.black {
+  background-color: black;
 }
 
-button{
-  color: brown;
-  border-radius: 40px;
+table tr:nth-child(1) {
+  height: 10%;
+}
+table tr:nth-child(2) {
+  height: 22%;
+}
+table tr:nth-child(3) {
+  height: 11%;
+}
+table tr:nth-child(4) {
+  height: 18%;
+}
+table tr:nth-child(5) {
+  height: 12%;
+}
+table tr:nth-child(6) {
+  height: 15%;
+}
+table tr:nth-child(7) {
+  height: 9%;
+}
+table tr:nth-child(8) {
+  height: 4%;
 }
